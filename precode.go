@@ -32,7 +32,7 @@ func Worker(in <-chan int64, out chan<- int64) {
 
 	for i := range in {
 		out <- i
-		time.Sleep(5 * time.Millisecond)
+		time.Sleep(1 * time.Millisecond)
 	}
 }
 
